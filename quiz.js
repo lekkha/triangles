@@ -11,15 +11,17 @@ function calculateScore(){
     let score =0; 
     let index =0; 
 
-    const formResult = new FormData(quizForm); 
+    const formResults = new FormData(quizForm); 
 
     //object is a collection of key value pairs by using this method only value is returned 
     //unlike the entries wala method jaha both key+value is returned 
-    for(let value of formResult.values()){
+    for(let value of formResults.values()){
         if(value === correctAnswer[index]){
             score = score+1; 
         }
         index = index+1;
     }
+
+    outputE1.innerText = "your score is" + score;
 }
 submitBtn.addEventListener("click", calculateScore);

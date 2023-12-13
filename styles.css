@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background for the body */
+  }
+
+  nav {
+    background-color: #3498db; /* Playful orange color */
+    overflow: hidden;
+    text-align: center; /* Center the content */
+    backdrop-filter: blur(8px); /* Subtle blur effect */
+    padding: 10px; /* Add padding for better visibility */
+  }
+
+  nav a {
+    display: inline-block; /* Display as block to apply padding and margin */
+    color:  white; /* Dark text for high contrast */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    font-weight: bold; /* Make the text bold */
+    font-size: large;
+  }
+
+  nav a:hover {
+    background-color: #A2DED0; /* Darker orange on hover */
+    color: rgb(72, 165, 14) ; /* White text on hover for better visibility */
+  }
